@@ -26,12 +26,13 @@
 </head>
 
 <body>
-
     <!--=================== Header ====================-->
     <header id="header" class="header">
+        
         <div class="container">
             <nav class="nav">
                 <a href="index.html" class="nav__brand">
+                    
                     <i class="ri-code-s-slash-line"></i>Chirantan<Span>Jana</Span>
                 </a>
                 <div class="nav__menu" id="nav-menu">
@@ -64,6 +65,9 @@
     </header>
     <!--=================== main ====================-->
     <main class="main">
+
+        <section><div><input type="checkbox" id="darkmode"/>
+            <label for="darkmode"></div></section>
         <!--=================== Hero ====================-->
         <section id="hero" class="hero">
             <div class="container">
@@ -77,11 +81,11 @@
                         </p>
                         <div class="hero__info">
                             <div class="hero__info-wrapper">
-                                <p class="hero__info-number">0</p>
+                                <p class="hero__info-number">03+</p>
                                 <h2 class="hero__info-title">Years<br>Experience</h2>
                             </div>
                             <div class="hero__info-wrapper">
-                                <p class="hero__info-number">1+</p>
+                                <p class="hero__info-number">15+</p>
                                 <h2 class="hero__info-title">Projects<br>Completed</h2>
                             </div>
                             <!-- <div class="hero__info-wrapper">
@@ -451,6 +455,11 @@
 
     <!--=================== Main JS ====================-->
     <script src="main.js"></script>
+    <script>
+    var darkmode = document.getElementById("darkmode");
+        darkmode.onclick = function () {
+          document.body.classList.toggle("dark_theme");
+        };</script>
 </body>
 
 </html>
